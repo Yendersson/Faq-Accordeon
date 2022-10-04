@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    /* TEXT */
+    --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --Soft-red: hsl(14, 88%, 65%);
+
+    /* GRADIENT */
+    /* background color */
+    --Soft-violet: hsl(273, 75%, 66%);
+    --Soft-blue: hsl(240, 73%, 65%);
+
+    /* NEUTRAL */
+    /* TEXT */
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --Dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* Dividers */
+    --Light-grayish-blue: hsl(240, 5%, 91%);
+
+    /* Body Copy */
+    --Font-size: 12px;
+
+    /* Font */
+    --Family: 'Kumbh Sans', sans-serif;
+    --Weight-regular: 400;
+    --Weight-bold: 700;
+
+    font-size: var(--Font-size)
+};
+
+*{
+    box-sizing: border-box;
+}
+
+body{ 
+    background: linear-gradient( var(--Soft-violet), var(--Soft-blue));
+    height: 100vh;
+    font-family: var(--Family);
+    margin: 0;
+    /* overflow: hidden; */
+}
+
+.container{
+    width: 90%;
+    background: white;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 50%;
+}
+
+.container__imgs{
+    width: 100%;
+    position: relative;
+    height: 15vh;
+    margin: auto;
+}
+
+ .container__illustration img, 
+.container__bg-pattern img{
+    width: 100%;
+}
+
+.img__position-abs{
+    position: absolute;
+}
+
+.container__illustration{
+    left: 16%;
+    right: 16%;
+    top: -85%;
+}
+
+.container__bg-pattern{
+    top: 3%;
+    left: 16%;
+    right: 16%;
+}
+
+.container__main {
+    padding: 1.5em;
+}
+
+.container__title{
+    color: var(--Very-dark-desaturated-blue);
+    text-align: center;
+    margin-top: 0;
+    font-size: 2.5rem;
+    font-weight: var(--Weight-bold);
+}
+.container__faq{
+    /* border: 1px solid black; */
+    margin-bottom: 10%;
+}
+
+.container__faq-question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Light-grayish-blue);
+}
+
+.container__faq-text{
+    font-weight: var(--Weight-regular);
+    font-size: 1.2rem;
+}
+
+.rotate-icon{
+    transform: rotate(180deg);
+}
+
+.faq__question{
+    display: none;
+    color: var(--Dark-grayish-blue);
+}
+
+.active{
+    display: block;
+}
+
+.faq-text{
+    color: var(--Very-dark-grayish-blue);
+}
+
+.faq-text:hover{
+    color: var(--Soft-red);
+}
+
+.text-bold{
+    font-weight: var(--Weight-bold);
+    color: var(--Very-dark-desaturated-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
